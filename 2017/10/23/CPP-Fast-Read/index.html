@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="编程," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="苟利国家生死以，岂因祸福避趋之。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="C++ 快速读入在 C++ 上实现用“字符转数字”的快读模板，这里是一个读取int 的示例。inline int Quick_Read(){     int s = 0,w = 1;     char ch = getchar();     while (ch &amp;lt;= &amp;apos;0&amp;apos; || ch &amp;gt; &amp;apos;9&amp;apos;){         if (ch == &amp;apo">
+<meta name="keywords" content="编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++ 快速读入 模板">
+<meta property="og:url" content="http://yoursite.com/2017/10/23/CPP-Fast-Read/index.html">
 <meta property="og:site_name" content="Handwer&#39;s Blog">
-<meta property="og:description" content="苟利国家生死以，岂因祸福避趋之。">
+<meta property="og:description" content="C++ 快速读入在 C++ 上实现用“字符转数字”的快读模板，这里是一个读取int 的示例。inline int Quick_Read(){     int s = 0,w = 1;     char ch = getchar();     while (ch &amp;lt;= &amp;apos;0&amp;apos; || ch &amp;gt; &amp;apos;9&amp;apos;){         if (ch == &amp;apo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-22T10:40:11.946Z">
+<meta property="og:updated_time" content="2017-10-23T11:49:30.800Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="苟利国家生死以，岂因祸福避趋之。">
+<meta name="twitter:title" content="C++ 快速读入 模板">
+<meta name="twitter:description" content="C++ 快速读入在 C++ 上实现用“字符转数字”的快读模板，这里是一个读取int 的示例。inline int Quick_Read(){     int s = 0,w = 1;     char ch = getchar();     while (ch &amp;lt;= &amp;apos;0&amp;apos; || ch &amp;gt; &amp;apos;9&amp;apos;){         if (ch == &amp;apo">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/23/CPP-Fast-Read/"/>
 
 
 
 
 
-  <title>tags | Handwer's Blog</title>
+  <title>C++ 快速读入 模板 | Handwer's Blog</title>
   
 
 
@@ -250,40 +251,157 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/23/CPP-Fast-Read/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Handwer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/imgs/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Handwer's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 3 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/模拟考/" style="font-size: 12px; color: #ccc">模拟考</a> <a href="/tags/生活/" style="font-size: 12px; color: #ccc">生活</a> <a href="/tags/编程/" style="font-size: 30px; color: #111">编程</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">C++ 快速读入 模板</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T19:40:02+08:00">
+                2017-10-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="C-快速读入"><a href="#C-快速读入" class="headerlink" title="C++ 快速读入"></a>C++ 快速读入</h2><h4 id="在-C-上实现用“字符转数字”的快读模板，这里是一个读取int-的示例。"><a href="#在-C-上实现用“字符转数字”的快读模板，这里是一个读取int-的示例。" class="headerlink" title="在 C++ 上实现用“字符转数字”的快读模板，这里是一个读取int 的示例。"></a>在 C++ 上实现用“字符转数字”的快读模板，这里是一个读取int 的示例。</h4><pre><code>inline int Quick_Read(){
+    int s = 0,w = 1;
+    char ch = getchar();
+    while (ch &lt;= &apos;0&apos; || ch &gt; &apos;9&apos;){
+        if (ch == &apos;-&apos;) w = -1;
+        ch = getchar();
+    }
+    while (ch &gt;= &apos;0&apos; &amp;&amp; ch &lt;= &apos;9&apos;) s = s * 10 + ch - &apos;0&apos; , ch = getchar();
+    return s * w;
+}
+</code></pre>
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/编程/" rel="tag"># 编程</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/23/10-12-17-xue-xi/" rel="next" title="2017-10-23 几个大颓子">
+                <i class="fa fa-chevron-left"></i> 2017-10-23 几个大颓子
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/23/CPP-Tree-Order/" rel="prev" title="C++ 二叉树三种遍历">
+                C++ 二叉树三种遍历 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -316,8 +434,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -388,6 +515,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#C-快速读入"><span class="nav-number">1.</span> <span class="nav-text">C++ 快速读入</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在-C-上实现用“字符转数字”的快读模板，这里是一个读取int-的示例。"><span class="nav-number">1.0.1.</span> <span class="nav-text">在 C++ 上实现用“字符转数字”的快读模板，这里是一个读取int 的示例。</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

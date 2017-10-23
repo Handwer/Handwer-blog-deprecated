@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="编程," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="苟利国家生死以，岂因祸福避趋之。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="C++ 二叉树的三种遍历C++ 的二叉树有三种遍历方法，分别是前序遍历、中序遍历、后序遍历. 具体的模板指针二叉树//前序遍历 void PreOrder(TreeNode *root) {         if (root == NULL)             return;         Visit root-&amp;gt;val;         PreOrder(root-&amp;gt;left">
+<meta name="keywords" content="编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++ 二叉树三种遍历">
+<meta property="og:url" content="http://yoursite.com/2017/10/23/CPP-Tree-Order/index.html">
 <meta property="og:site_name" content="Handwer&#39;s Blog">
-<meta property="og:description" content="苟利国家生死以，岂因祸福避趋之。">
+<meta property="og:description" content="C++ 二叉树的三种遍历C++ 的二叉树有三种遍历方法，分别是前序遍历、中序遍历、后序遍历. 具体的模板指针二叉树//前序遍历 void PreOrder(TreeNode *root) {         if (root == NULL)             return;         Visit root-&amp;gt;val;         PreOrder(root-&amp;gt;left">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-22T10:40:11.946Z">
+<meta property="og:updated_time" content="2017-10-23T12:24:09.229Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="苟利国家生死以，岂因祸福避趋之。">
+<meta name="twitter:title" content="C++ 二叉树三种遍历">
+<meta name="twitter:description" content="C++ 二叉树的三种遍历C++ 的二叉树有三种遍历方法，分别是前序遍历、中序遍历、后序遍历. 具体的模板指针二叉树//前序遍历 void PreOrder(TreeNode *root) {         if (root == NULL)             return;         Visit root-&amp;gt;val;         PreOrder(root-&amp;gt;left">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/23/CPP-Tree-Order/"/>
 
 
 
 
 
-  <title>tags | Handwer's Blog</title>
+  <title>C++ 二叉树三种遍历 | Handwer's Blog</title>
   
 
 
@@ -250,40 +251,176 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/23/CPP-Tree-Order/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Handwer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/imgs/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Handwer's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 3 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/模拟考/" style="font-size: 12px; color: #ccc">模拟考</a> <a href="/tags/生活/" style="font-size: 12px; color: #ccc">生活</a> <a href="/tags/编程/" style="font-size: 30px; color: #111">编程</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">C++ 二叉树三种遍历</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T20:00:33+08:00">
+                2017-10-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="C-二叉树的三种遍历"><a href="#C-二叉树的三种遍历" class="headerlink" title="C++ 二叉树的三种遍历"></a>C++ 二叉树的三种遍历</h2><p>C++ 的二叉树有三种遍历方法，分别是前序遍历、中序遍历、后序遍历.</p>
+<h3 id="具体的模板"><a href="#具体的模板" class="headerlink" title="具体的模板"></a>具体的模板</h3><h4 id="指针二叉树"><a href="#指针二叉树" class="headerlink" title="指针二叉树"></a>指针二叉树</h4><pre><code>//前序遍历
+void PreOrder(TreeNode *root)
+{
+        if (root == NULL)
+            return;
+        Visit root-&gt;val;
+        PreOrder(root-&gt;left);
+        PreOrder(root-&gt;right);
+
+}
+
+//中序遍历
+void InOrder(TreeNode *root)
+{
+        if (root == NULL)
+            return;
+        InOrder(root-&gt;left);
+        Visit root-&gt;val;
+        InOrder(root-&gt;right);
+
+}
+
+//后序遍历
+void PostOrder(TreeNode *root)
+{
+        if (root == NULL)
+            return;
+        PostOrder(root-&gt;left);
+        PostOrder(root-&gt;right);
+        Visit root-&gt;val;
+
+}
+</code></pre>
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/编程/" rel="tag"># 编程</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/23/CPP-Fast-Read/" rel="next" title="C++ 快速读入 模板">
+                <i class="fa fa-chevron-left"></i> C++ 快速读入 模板
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -316,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -388,6 +534,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#C-二叉树的三种遍历"><span class="nav-number">1.</span> <span class="nav-text">C++ 二叉树的三种遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#具体的模板"><span class="nav-number">1.1.</span> <span class="nav-text">具体的模板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#指针二叉树"><span class="nav-number">1.1.1.</span> <span class="nav-text">指针二叉树</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

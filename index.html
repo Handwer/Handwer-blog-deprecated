@@ -223,7 +223,7 @@
         <li class="menu-item menu-item-frlink">
           <a href="/frlink/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-link"></i> <br />
             
             友链
           </a>
@@ -248,6 +248,407 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/23/CPP-Tree-Order/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Handwer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/imgs/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Handwer's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/23/CPP-Tree-Order/" itemprop="url">C++ 二叉树三种遍历</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T20:00:33+08:00">
+                2017-10-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="C-二叉树的三种遍历"><a href="#C-二叉树的三种遍历" class="headerlink" title="C++ 二叉树的三种遍历"></a>C++ 二叉树的三种遍历</h2><p>C++ 的二叉树有三种遍历方法，分别是前序遍历、中序遍历、后序遍历.</p>
+<h3 id="具体的模板"><a href="#具体的模板" class="headerlink" title="具体的模板"></a>具体的模板</h3><h4 id="指针二叉树"><a href="#指针二叉树" class="headerlink" title="指针二叉树"></a>指针二叉树</h4><pre><code>//前序遍历
+void PreOrder(TreeNode *root)
+{
+        if (root == NULL)
+            return;
+        Visit root-&gt;val;
+        PreOrder(root-&gt;left);
+        PreOrder(root-&gt;right);
+
+}
+
+//中序遍历
+void InOrder(TreeNode *root)
+{
+        if (root == NULL)
+            return;
+        InOrder(root-&gt;left);
+        Visit root-&gt;val;
+        InOrder(root-&gt;right);
+
+}
+
+//后序遍历
+void PostOrder(TreeNode *root)
+{
+        if (root == NULL)
+            return;
+        PostOrder(root-&gt;left);
+        PostOrder(root-&gt;right);
+        Visit root-&gt;val;
+
+}
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/23/CPP-Fast-Read/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Handwer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/imgs/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Handwer's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/23/CPP-Fast-Read/" itemprop="url">C++ 快速读入 模板</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T19:40:02+08:00">
+                2017-10-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="C-快速读入"><a href="#C-快速读入" class="headerlink" title="C++ 快速读入"></a>C++ 快速读入</h2><h4 id="在-C-上实现用“字符转数字”的快读模板，这里是一个读取int-的示例。"><a href="#在-C-上实现用“字符转数字”的快读模板，这里是一个读取int-的示例。" class="headerlink" title="在 C++ 上实现用“字符转数字”的快读模板，这里是一个读取int 的示例。"></a>在 C++ 上实现用“字符转数字”的快读模板，这里是一个读取int 的示例。</h4><pre><code>inline int Quick_Read(){
+    int s = 0,w = 1;
+    char ch = getchar();
+    while (ch &lt;= &apos;0&apos; || ch &gt; &apos;9&apos;){
+        if (ch == &apos;-&apos;) w = -1;
+        ch = getchar();
+    }
+    while (ch &gt;= &apos;0&apos; &amp;&amp; ch &lt;= &apos;9&apos;) s = s * 10 + ch - &apos;0&apos; , ch = getchar();
+    return s * w;
+}
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/23/10-12-17-xue-xi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Handwer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/imgs/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Handwer's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/23/10-12-17-xue-xi/" itemprop="url">2017-10-23 几个大颓子</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T18:51:24+08:00">
+                2017-10-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天的题目真是滑稽啊，相比之前的题目 <del>更难</del> 略水。要不是我没有学过树，我肯定能AK #(滑稽)<br>Shq这货下午买了一个域名。他花了1块钱从阿里云上买了一个 <del>高性价比</del> 廉价的域名，打算像Wyh一样将自己的Blog解析到他的 <del>高性价比</del> 廉价的域名上。对此我只能说：你们啊，Naive！<br>今天晚上，Shq突然说不去了。他下午买了一个域名，我本以为他要Wyh教他解析域名，但是他在和Wyh<strong>颓炉石、颓饥荒</strong>。也不知道他怎么想的，居然开始旷课了，真是<em>滑天下之大稽</em>。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -668,7 +1069,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -676,6 +1077,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
